@@ -1,0 +1,25 @@
+{
+  "name": "dungeon-suvivor",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html -p 8000",
+    "build": "parcel build src/index.html --out-dir dist"
+  },
+  "author": "deze",
+  "devDependencies": {
+    "minimist": ">=1.2.2",
+    "parcel-plugin-clean-easy": "^1.0.2",
+    "parcel-plugin-static-files-copy": "^2.4.3",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "phaser": "^3.55.2"
+  },
+  "parcelCleanPaths": [
+    "dist"
+  ],
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  }
+}
